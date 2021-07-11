@@ -32,7 +32,8 @@
   align-items: center;
 }
 
-.nav a, .post-link a {
+.nav a,
+.post-link a {
   color: #61dafb;
 }
 
@@ -48,6 +49,10 @@
 
 .page-content h1:not(:last-child) {
   margin-right: 24px;
+}
+
+.query-content p {
+  text-indent: 2rem;
 }
 
 @keyframes App-logo-spin {
