@@ -37,7 +37,8 @@
 }
 
 .nav a,
-.post-link a {
+.post-link a,
+.profile-link a {
   color: #61dafb;
 }
 
