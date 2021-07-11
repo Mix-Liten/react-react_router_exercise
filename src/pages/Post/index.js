@@ -1,12 +1,12 @@
 import ParamsId from './_id'
 
-const Post = (props) => {
+const Post = () => {
   return (
     <>
       <h1>
         Post Page
       </h1>
-      <ParamsId {...props} />
+      <ParamsId />
     </>
   )
 }
