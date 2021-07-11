@@ -15,7 +15,7 @@ const Header = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/profile">Profile</Link>
+          <Link to="/profile">Profile(should login)</Link>
         </li>
       </ul>
     </header>

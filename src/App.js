@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Home from './pages/Home'
@@ -31,8 +31,9 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
           <Route path="/profile">
-            {/* <Redirect> 導頁至指定頁面 */}
-            {isLogin ? <Profile /> : <Redirect to="/" />}
+            {/* 無登入時使用 <Redirect> 導頁至指定頁面 */}
+            {/* {isLogin ? <Profile /> : <Redirect to="/" />} */}
+            <Profile isLogin={isLogin} />
           </Route>
           {/* 傳遞 URL Params 給元件 */}
           <Route path="/post/:id" component={Post} />
